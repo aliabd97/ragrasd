@@ -1,0 +1,46 @@
+# =============================================================================
+# 📦 Step 4 AI: Query Analyzer - Python Dependencies
+# =============================================================================
+
+# Core (من requirements.txt الأصلي)
+python-dotenv==1.0.0
+pyyaml==6.0.1
+tqdm==4.66.1
+
+# Embeddings & Vector Database
+sentence-transformers==2.2.2
+torch==2.1.0
+chromadb==0.4.18
+
+# =============================================================================
+# 🤖 LLM Providers - اختر واحد أو أكثر
+# =============================================================================
+
+# OpenAI (GPT-4, GPT-3.5)
+openai>=1.0.0
+
+# Google Gemini
+google-generativeai>=0.3.0
+
+# Anthropic Claude
+anthropic>=0.18.0
+
+# =============================================================================
+# 📝 ملاحظات
+# =============================================================================
+#
+# لا تحتاج لتثبيت جميع مكتبات LLM
+# ثبت فقط ما ستستخدمه:
+#
+# OpenAI فقط:
+#   pip install openai python-dotenv
+#
+# Gemini فقط:
+#   pip install google-generativeai python-dotenv
+#
+# Claude فقط:
+#   pip install anthropic python-dotenv
+#
+# جميع المزودين:
+#   pip install -r requirements_ai.txt
+#
