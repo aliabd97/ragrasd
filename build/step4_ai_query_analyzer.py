@@ -166,7 +166,8 @@ class AIQueryAnalyzer:
                 raise ValueError("GEMINI_API_KEY not found in environment")
 
             genai.configure(api_key=api_key)
-            self.model = self.model or "gemini-pro"
+            # استخدام النموذج الجديد gemini-1.5-flash (مجاني وسريع)
+            self.model = self.model or "gemini-1.5-flash"
             self.gemini_model = genai.GenerativeModel(self.model)
             print(f"✅ تم تهيئة Google Gemini ({self.model})")
 
