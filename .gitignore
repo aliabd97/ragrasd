@@ -11,7 +11,7 @@ __pycache__/
 env/
 venv/
 ENV/
-build/
+# build/ - استبعد فقط build الناتجة عن setuptools، احتفظ بمجلد build/ للسكريبتات
 develop-eggs/
 dist/
 downloads/
