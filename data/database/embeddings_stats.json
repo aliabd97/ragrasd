@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-11-15T23:41:15.073060",
+  "model": "intfloat/multilingual-e5-large",
+  "model_type": "Microsoft E5 (state-of-the-art for Arabic)",
+  "embedding_dimension": 1024,
+  "device": "cpu",
+  "data": {
+    "documents": 4,
+    "sections": 315,
+    "paragraphs": 434,
+    "total": 753
+  },
+  "database": {
+    "total_items": 753,
+    "documents": 4,
+    "sections": 315,
+    "paragraphs": 434
+  },
+  "performance": {
+    "total_time_seconds": 992.02,
+    "total_time_minutes": 16.53,
+    "items_per_second": 0.76
+  },
+  "model_info": {
+    "advantages": [
+      "أقوى نموذج للعربية",
+      "1024 أبعاد (أكبر من paraphrase-768)",
+      "100 لغة",
+      "state-of-the-art performance"
+    ]
+  }
+}
