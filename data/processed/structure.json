@@ -1,0 +1,32 @@
+{
+  "book": "الشافي في الإمامة",
+  "author": "الشريف المرتضى",
+  "total_volumes": 4,
+  "total_documents": 4,
+  "total_sections": 315,
+  "total_paragraphs": 434,
+  "total_pages": 1262,
+  "total_words": 337495,
+  "total_citations": 0,
+  "hierarchy": {
+    "documents": [
+      "shafi_v1",
+      "shafi_v2",
+      "shafi_v3",
+      "shafi_v4"
+    ],
+    "sections_per_document": {
+      "shafi_v1": 78,
+      "shafi_v2": 80,
+      "shafi_v3": 67,
+      "shafi_v4": 90
+    },
+    "paragraphs_per_document": {
+      "shafi_v1": 103,
+      "shafi_v2": 110,
+      "shafi_v3": 103,
+      "shafi_v4": 118
+    }
+  },
+  "created_at": "2025-11-15T18:26:17.360186"
+}

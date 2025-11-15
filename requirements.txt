@@ -1,0 +1,16 @@
+# =============================================================================
+# 📦 Step 3: Embeddings - Python Dependencies
+# =============================================================================
+
+# Core
+python-dotenv==1.0.0
+pyyaml==6.0.1
+tqdm==4.66.1
+
+# Embeddings & Vector Database
+sentence-transformers==2.2.2
+torch==2.1.0
+chromadb==0.4.18
+
+# Optional: للـ GPU
+# torch==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
