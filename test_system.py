@@ -8,7 +8,7 @@ model = SentenceTransformer('intfloat/multilingual-e5-large')
 # 2. الاتصال بقاعدة البيانات
 print("🔄 الاتصال بقاعدة البيانات...")
 client = chromadb.PersistentClient(path="data/database/chroma_db")
-collection = client.get_collection("islamic_books")
+collection = client.get_collection("islamic_books_e5")
 
 # 3. اختبار البحث
 query = "من هو الشريف المرتضى؟"
