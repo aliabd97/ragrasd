@@ -5,11 +5,19 @@
 """
 
 import os
-from dotenv import load_dotenv
-from build.step4_ai_query_analyzer import AIQueryAnalyzer
+import sys
+
+# إضافة مسار build
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'build'))
 
 # تحميل المتغيرات من ملف .env
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    print("⚠️  python-dotenv غير مثبت. سنستخدم متغيرات البيئة مباشرة.")
+
+from step4_ai_query_analyzer import AIQueryAnalyzer
 
 
 def example_1_auto_provider():
