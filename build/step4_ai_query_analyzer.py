@@ -181,7 +181,8 @@ class AIQueryAnalyzer:
                 raise ValueError("ANTHROPIC_API_KEY not found in environment")
 
             self.claude_client = anthropic.Anthropic(api_key=api_key)
-            self.model = self.model or "claude-3-sonnet-20240229"
+            # استخدام أحدث نموذج Claude 3.5 Sonnet
+            self.model = self.model or "claude-3-5-sonnet-20241022"
             print(f"✅ تم تهيئة Anthropic Claude ({self.model})")
 
     def _create_analysis_prompt(self) -> str:
