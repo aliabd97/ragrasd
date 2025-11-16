@@ -35,19 +35,31 @@ paths:
 # 🔢 EMBEDDINGS MODEL
 # =============================================================================
 embeddings:
-  # النموذج (أقوى نموذج للعربية - Microsoft E5)
-  provider: "sentence_transformers"
-  model: "intfloat/multilingual-e5-large"
-  
-  # المواصفات
-  dimension: 1024  # أكبر من paraphrase (768)
-  max_length: 512  # tokens
-  normalize: true
-  
-  # الأداء
-  batch_size: 32
-  device: "cpu"  # أو "cuda" إذا كان GPU متاح
-  show_progress: true
-  
-  # التخزين المؤقت
-  cache_folder: "./cache/embeddings"
+  # الموفر: "openai" أو "sentence_transformers"
+  provider: "openai"  # يمكن تغييره إلى "sentence_transformers"
+
+  # OpenAI Settings
+  openai:
+    model: "text-embedding-3-small"  # أو "text-embedding-3-large"
+    dimension: 1536  # لـ text-embedding-3-small
+    # dimension: 3072  # لـ text-embedding-3-large
+
+  # Sentence Transformers Settings (للنموذج المحلي)
+  sentence_transformers:
+    model: "intfloat/multilingual-e5-large"
+    dimension: 1024
+    max_length: 512
+    normalize: true
+    batch_size: 32
+    device: "cpu"  # أو "cuda" إذا كان GPU متاح
+    show_progress: true
+    cache_folder: "./cache/embeddings"
+
+# =============================================================================
+# 🤖 LLM MODEL (for Answer Generation)
+# =============================================================================
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"  # أو "gpt-4o" للجودة الأعلى
+  temperature: 0.3
+  max_tokens: 3000  # لإجابات طويلة ومفصلة
